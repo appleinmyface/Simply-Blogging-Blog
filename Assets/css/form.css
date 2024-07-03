@@ -1,0 +1,31 @@
+.form-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+    width: 300px;
+    padding: 1em;
+    border: 1px solid #333;
+    background-color: #fff;
+}
+
+label {
+    margin-top: 1em;
+}
+
+input, textarea, button {
+    margin-top: 0.5em;
+    padding: 0.5em;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
