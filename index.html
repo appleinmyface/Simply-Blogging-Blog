@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SimplyBlogging - New Post</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplyBlogging</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 </head>
 <body>
-  <header>
-    <h1>SimplyBlogging</h1>
-  </header>
-  <main>
-    <div class="form-container">
-      <form id="blogForm">
-        <h2>What's on your mind?</h2>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required>
-        <label for="content">Content:</label>
-        <textarea id="content" name="content" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <p id="errorMessage" class="hidden">Please complete all fields.</p>
-    </div>
-  </main>
-  <footer>
-    <a href="https://developer-portfolio.com" target="_blank">Developer's Portfolio</a>
-  </footer>
-  <script src="assets/js/form.js"></script>
+    <header>
+        <h1>SimplyBlogging</h1>
+        <button id="theme-toggle" class="sun-icon">☀️</button>
+    </header>
+    <main>
+        <div class="circle">
+            <h2>SimplyBlogging</h2>
+        </div>
+        <div class="form-container">
+            <form id="blog-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="content">Content</label>
+                <textarea id="content" name="content" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p><a href="https://appleinmyface.github.io/Personal-Portfolio/" target="_blank"> Developer Portfolio</a> | Made by Derick Hernandez | Email: devEmail@gmail.com</p>
+    </footer>
+    <script src="assets/js/logic.js"></script>
+    <script src="assets/js/form.js"></script>
 </body>
 </html>
