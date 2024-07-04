@@ -1,31 +1,32 @@
 .form-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-form {
+  }
+  
+  form {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: 300px;
     padding: 1em;
     border: 1px solid #333;
     background-color: #fff;
-}
-
-label {
+  }
+  
+  label {
     margin-top: 1em;
-}
-
-input, textarea, button {
+  }
+  
+  input, textarea, button {
     margin-top: 0.5em;
     padding: 0.5em;
-}
-
-button {
+  }
+  
+  button {
     background-color: #333;
     color: #fff;
     border: none;
     cursor: pointer;
     margin-top: 1em;
-}
+  }
+  
