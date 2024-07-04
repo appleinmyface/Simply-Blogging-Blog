@@ -1,29 +1,31 @@
-document.addEventListener('DOMContentLoaded', function(){
-    const postContainer = document.getElementById('postContainer');
+document.addEventListener('DOMContentLoaded', function() {
+    const postsContainer = document.getElementById('postsContainer');
     const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-
-    blogPosts.forEach(post => {
-
-        //creates div for each post
+  
+    if (blogPosts.length === 0) {
+      const noPostsMessage = document.createElement('p');
+      noPostsMessage.textContent = 'No blog posts yet. Be the first to add one!';
+      postsContainer.appendChild(noPostsMessage);
+    } else {
+      blogPosts.forEach(post => {
         const postElement = document.createElement('div');
         postElement.classList.add('post');
-
-        //creates h2 for each title
+        
         const titleElement = document.createElement('h2');
         titleElement.textContent = post.title;
-
-        //creates p for the content of each post
+        
         const contentElement = document.createElement('p');
-        authorElement.textContent = post.content;
-
-        //creates another p for the Author
+        contentElement.textContent = post.content;
+        
         const authorElement = document.createElement('p');
         authorElement.textContent = `Posted by: ${post.username}`;
-
+        
         postElement.appendChild(titleElement);
         postElement.appendChild(contentElement);
         postElement.appendChild(authorElement);
-
-        postElement.appendChild(postElement);
-    });
-})
+        
+        postsContainer.appendChild(postElement);
+      });
+    }
+  });
+  
