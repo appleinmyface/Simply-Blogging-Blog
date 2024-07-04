@@ -1,26 +1,27 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding:0;
+    padding: 0;
     background-color: #f0f0f0;
-}
-
-header, footer {
+  }
+  
+  header, footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-}
-
-main {
+  }
+  
+  main {
     padding: 1em;
-}
-
-.hidden {
+  }
+  
+  .hidden {
     display: none;
-}
-
-.darkmode {
+  }
+  
+  .dark-mode {
     background-color: #333;
     color: #fff;
-}
+  }
+  
