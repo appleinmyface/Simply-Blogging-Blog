@@ -1,3 +1,5 @@
+//what happens when you hit the submit button
+
 document.getElementById('blog-form').addEventListener('submit', function (event) {
     event.preventDefault();
 

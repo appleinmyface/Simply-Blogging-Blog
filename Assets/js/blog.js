@@ -1,3 +1,5 @@
+//formatting of each blog post
+
 document.addEventListener('DOMContentLoaded', function () {
     const postsContainer = document.getElementById('posts-container');
     const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
