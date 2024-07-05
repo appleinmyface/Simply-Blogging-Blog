@@ -1,6 +1,7 @@
 /* General styles */
 body {
     margin: 0;
+    margin-bottom: 20px;
     font-family: Arial, sans-serif;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
@@ -24,7 +25,7 @@ header h1 {
 .sun-icon {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 50px;
     cursor: pointer;
 }
 
@@ -104,9 +105,9 @@ main {
 [data-theme="dark"] {
     --main-bg-color: black;
     --secondary-bg-color: white;
-    --accent-color: aquamarine;
+    --accent-color: black;
     --main-text-color: white;
-    --circle-bg: linear-gradient(aquamarine, lightblue);
+    --circle-bg: linear-gradient(#00bfff, rgb(0, 69, 92));
     --accent-color-dark: darkcyan;
 }
 
@@ -141,4 +142,37 @@ main {
 .post-author {
     margin-top: 1em;
     font-style: italic;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    #main-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .circle {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .circle {
+        margin-bottom: 20px;
+    }
+}
+
+/* Blog post button */
+#view-posts {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#view-posts:hover {
+    background-color: var(--accent-color-dark);
 }
