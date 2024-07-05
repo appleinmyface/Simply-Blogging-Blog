@@ -98,7 +98,7 @@ main {
     --secondary-bg-color: darkgrey;
     --accent-color: gold;
     --main-text-color: black;
-    --circle-bg: linear-gradient(gold, yellow);
+    --circle-bg: linear-gradient(rgb(255, 217, 0), rgb(255, 255, 255));
     --accent-color-dark: darkgoldenrod;
 }
 
@@ -107,8 +107,8 @@ main {
     --secondary-bg-color: white;
     --accent-color: black;
     --main-text-color: white;
-    --circle-bg: linear-gradient(#00bfff, rgb(0, 69, 92));
-    --accent-color-dark: darkcyan;
+    --circle-bg: linear-gradient(#00bfff, rgb(0, 0, 0));
+    --accent-color-dark: rgb(0, 207, 207);
 }
 
 #posts-container {
